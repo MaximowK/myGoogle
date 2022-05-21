@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+a {
+  color: #445144;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.menu__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 5px 7px;
+}
+
+.menu__items a {
+  display: inline-block;
+  margin: 7px 7px 7px 7px;
+}
+
+.menu__mail:hover {
+  text-decoration: underline;
+}
+
+.menu__images:hover {
+  text-decoration: underline;
+}
+
+.menu__menu img {
+  width: 15px;
+  height: 15px;
+}
+
+.menu__login {
+  background-color: #1e6ce0;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5%;
+  font-size: 14px;
+}
+
+.menu__login:hover {
+  background-color: rgba(30, 108, 224, 0.705);
+  -webkit-box-shadow: 1px 1px 1px 1px #1c74f8;
+          box-shadow: 1px 1px 1px 1px #1c74f8;
+}
+
+.search__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 130px;
+}
+
+.search__window {
+  margin: 27px;
+  border: 1px solid rgba(120, 120, 122, 0.377);
+  resize: none;
+  height: 48px;
+  width: 585px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search__glassimg {
+  height: 15px;
+  width: 15px;
+  margin-top: 20px;
+}
+
+.search__window input {
+  width: 500px;
+  padding-left: 5px;
+  height: 40px;
+}
+
+.search__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search__buttons a:hover {
+  background-color: #fff;
+  border: 1px solid #44514481;
+}
+
+.search__serchbtm {
+  background-color: #f0f0f3;
+  padding: 12px 15px;
+  border-radius: 5%;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.search__luckbtm {
+  background-color: #f0f0f3;
+  padding: 12px 15px;
+  border-radius: 5%;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.search__text {
+  margin: 30px;
+}
+
+.search__lang {
+  padding-left: 5px;
+  color: #0000cd;
+}
+
+.search__lang:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #f0f0f3;
+  font-size: 14px;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__location {
+  border-bottom: 1px solid rgba(79, 79, 80, 0.445);
+  padding: 20px;
+  color: #445144;
+}
+
+.footer__menu {
+  padding: 20px;
+}
+
+.footer__menu_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__menu_row a {
+  padding: 0 10px;
+}
+
+.footer__menu_row a:hover {
+  text-decoration: underline;
+}
